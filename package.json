@@ -1,0 +1,29 @@
+{
+  "name": "book_now",
+  "version": "1.0.0",
+  "description": "In this project we are building website design (front-end) through which you can book hotel, flight, tour ... etc.(using html and sass)",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "watch:sass1": "node-sass sass/flight.scss css/flight.css -w",
+    "watch:sass2": "node-sass sass/car-rental.scss css/car-rental.css -w",
+    "watch:sass3": "node-sass sass/tours.scss css/tours.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass watch:sass1 watch:sass2 watch:sass3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malaya2184/BOOK_NOW.git"
+  },
+  "author": "Malaya #spider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malaya2184/BOOK_NOW/issues"
+  },
+  "homepage": "https://github.com/Malaya2184/BOOK_NOW/home.html",
+  "devDependencies": {
+    "devserver": "^0.2.5",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
